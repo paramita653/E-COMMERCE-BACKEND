@@ -1,1 +1,15 @@
-
+body{
+  background-color: floralwhite;
+  text-align: center;
+  line-height: 2;
+  font-family: sans-serif; 
+  margin: 20px; 
+}
+.product{ 
+  border: 1px solid #ddd; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+}
+.hidden { 
+  display: none; 
+}

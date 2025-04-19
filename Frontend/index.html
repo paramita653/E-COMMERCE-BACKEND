@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <h1>E-Commerce Website</h1>
+  <!-- User Authentication -->
+  <div id="auth">
+    <h2>Login</h2>
+    <form onsubmit="login(event)">
+      <input type="text" id="username" placeholder="Username" required /><br>
+      <input type="password" id="password" placeholder="Password" required /><br>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <div id="content" class="hidden">
+  <!-- Product Management -->
+    <h2>Product Management</h2>
+    <div id="products">
+      <p><big>Milk</big> - <small>Rs.40/packet</small></p>
+      <p><big>Biscuit</big> - <small>Rs.25/packet</small></p>
+      <p><big>Salt</big> - <small>Rs.30/packet</small></p>
+      <p><big>Sugar</big> - <small>Rs.38/packet</small></p>
+      <p><big>Mustard Oil</big> - <small>Rs.80/packet</small></p>
+      <p><big>Pasta</big> - <small>Rs.32/packet</small></p>
+      <p><big>Tea</big> - <small>Rs.5/packet</small></p>
+      <p><big>Coffee</big> - <small>Rs.10/packet</small></p>
+    </div>
+    <button onclick="addProduct()">Add Product</button>
+  <!-- Order Processing -->  
+    <h2>Order Processing</h2>
+    <form onsubmit="placeOrder(event)">
+      <input type="text" id="orderDetails" placeholder="Order Details" required />
+      <button type="submit">Place Order</button>
+    </form>
+    <div id="orderConfirmation"></div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
 
